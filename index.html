@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GLOWING ICONS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #18191f;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+
+        #github,
+        #instagram,
+        #codepen {
+            background-color: #18191f;
+            color: #fff;
+            padding: 11px 19px;
+            margin: 0 40px;
+            border: 2px solid red;
+            border-radius: 12px;
+            font-size: 50px;
+            cursor: pointer;
+            animation: animate 3s linear infinite;
+            text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+                0 0 200px #0072ff;
+            box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+                2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080;
+        }
+
+        #codepen {
+            animation-delay: 0.3s;
+        }
+
+        #instagram {
+            animation-delay: 0.5s;
+        }
+
+        #github {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes animate {
+            from {
+                filter: hue-rotate(0deg);
+            }
+
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://www.instagram.com/em._.anubhav/?hl=en"><i class="fa fa-instagram" id="instagram"></i></a>
+        <a href="https://codepen.io/khiladianubhav"><i class="fa fa-codepen" id="codepen"></i></a>
+        <a href="https://github.com/anubhav16012003"><i class="fa fa-github" id="github"></i></a>
+    </div>
+</body>
+
+</html>
